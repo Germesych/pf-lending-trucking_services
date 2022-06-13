@@ -1,0 +1,131 @@
+.main{
+  max-width: 1980px;
+  width: 100%;
+}
+.services{
+  .title{
+    margin-bottom: 95px;
+    text-align: center;
+  }
+  .flex{
+    margin-bottom: 80px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: stretch;
+  }
+}
+.services__col{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 400px;
+  width: 100%;
+  margin-bottom: 131px;
+  img{
+    margin-bottom: 30px;
+  }
+  .text{}
+}
+.services__col-wrap{
+  text-align: center;
+  width: 280px;
+}
+.services__search{
+  background: var(--accent-color);
+  width: 100%;
+  height: 354px;
+  padding: 0 -20px;
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .title{
+    margin-bottom: 32px;
+  }
+  .subtitle{
+    margin-bottom: 37px;
+  }
+}
+.services__form{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.services__input{
+  max-width: 402px;
+  width: 100%;
+  height: 63px;
+  margin-right: 20px;
+  padding: 0 20px;
+}
+// our-services
+.our-services{
+  position: relative;
+  width: 100%;
+  color: var(--white);
+}
+.our-services__col{
+  position: relative;
+  width: 50%;
+  text-align: center;
+  &::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(51, 51, 51, 0.7);
+    z-index: 1;
+  }
+  img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+  }
+}
+.about-us{
+  width: 100%;
+  height: 639px;
+  .flex{
+    background: var(--accent-color);
+  }
+}
+
+.about-us__col{
+  width: 50%;
+  color: var(--white);
+}
+.about-us__col-map{
+  background-image: url("../../images/dist/img/map.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 639px;
+  width: 75%;
+}
+.about-us__col-content{
+  padding-left: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+.about-us__col-title{
+  margin-bottom: 30px;
+  font-size: var(--fs-title);
+}
+.about-us__col-text{
+  max-width: 464px;
+  width: 100%;
+  font-size: 23px;
+}
